@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dial Pad</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/dcfa3abfd7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="hed">
+  <button id="fit"> <i class="fa-solid fa-moon fa-xl"></i> </button>
+	<input type="text" placeholder=""
+		readonly id="result">
+		
+		<!-- contact lists -->
+		
+		<div id="overlay">
+	<div class="contact">
+	<p id="prev" onclick="goBack()"> Back </p>
+	<h1>Contacts</h1>
+	<input id="search" type="texts" placeholder="search"/>
+	<span class="abr"> <b>E</b>
+	</span>
+  <span class="name">Emmanuel <br>My card</span>
+	<div class="cl">
+	<p>A</p>
+	<p>Anderson</p>
+	<p>Arnold 🚀</p>
+	<p>Asake</p>
+	<p>Anthony</p>
+	<p>Aunt</p>
+	<p>Antman</p>
+	<p>Augustine</p>
+	<p>Ashabi ❣️😍</p>
+	</div>
+	<div class="cl"> 
+	<p>B</p>
+	<p>Batman 🦇</p>
+	<p>Benson</p>
+	<p>Bernard</p>
+	<p>Blessing</p>
+	<p>Beckham</p>
+	</div>
+    	<div class="cl">
+	<p>C</p>
+	<p>Catherine</p>
+	<p>Courtinho</p>
+	<p>Cassandra</p>
+	<p>Cutie ❤️</p>
+	<p>cane</p>
+	<p>comrade 🌚</p>
+	</div>
+	<div class="cl">
+	<p>T</p>
+	<p>Tope</p>
+	<p>Tommy</p>
+	<p>Temi</p>
+	<p>Trump</p>
+	</div>
+	</div>
+	</div>
+  <section class="main">
+	<div class="container">
+	<div onclick="show(1)" class="texts">
+	<h1>1</h1>
+	<br />
+	</div>
+	<div onclick="show(2)" class="texts">
+	<h1>2</h1>
+	<p>ABC</p>
+	</div>
+	<div onclick="show(3)" class="texts">
+	<h1>3</h1>
+	<p>DEF</p>
+	</div>
+	<div onclick="show(4)" class="texts">
+	<h1>4</h1>
+	<p>GHI</p> 
+	</div>
+	<div onclick="show(5)" class="texts">
+	<h1>5</h1>
+	<p>JKL</p>
+	</div>
+		<div onclick="show(6)" class="texts">
+	<h1>6</h1>
+	<p>MNO</p> 
+	</div>
+	<div onclick="show(7)" class="texts">
+	<h1>7</h1>
+	<p>PQRS</p>
+	</div>
+	<div onclick="show(8)" class="texts">
+	<h1>8</h1>
+	<p>TUV</p>
+	</div>
+	<div onclick="show(9)" class="texts">
+	<h1>9</h1>
+	<p>WXYZ</p>
+	</div>
+	<div onclick="showOperators('*')" class="texts">
+	<h1>*</h1>
+	</div>
+	<div onclick="show(0)" class="texts">
+	<h1>0</h1>
+	<p>+</p>
+	</div>
+	<div onclick="showOperators('#')" class="texts">
+	<h1>#</h1>
+	</div>
+	<div onclick="error()" id="cell">
+	<h1><i class="fa-solid fa-phone"></i></h1>
+	</div>
+	<div onclick="clearResult()" id="cancel">
+	<h1><i class="fa-regular fa-xmark"></i></h1>
+	</div>
+	</div>
+	</section>
+  <!-- tools -->
+	
+	<section id="tools">
+	<div class="icons">
+	<i class="fa-solid fa-star fa-xl"></i>
+	<p class="special">Favorites</p>
+	</div>
+	<div class="icons">
+	<i class="fa-solid fa-clock fa-xl"></i>
+	<p>Recents</p>
+	</div>
+	<div class="icons" onclick="showContact()" onclick="opaque()">
+	<i class="fa-solid fa-user fa-xl"></i>
+	<p>Contacts</p>
+	</div>
+	<div class="icons">
+	<i class="fa-solid fa-voicemail fa-xl"></i>
+<p>Voicemail</p>
+	</div>
+	</section>
+  <script src="index.js"></script>
+  	
+</body>
+
+</html>

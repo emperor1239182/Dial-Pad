@@ -1,0 +1,166 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      font-size: 100%;
+    height: 100%;
+  }
+  .main{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+  /* styling for the texts, excluding the icons text */
+   .texts:not(:last-child){
+      height: 53px;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      padding-bottom: 18px;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #353935;
+      color: white;
+  }
+  h1{
+      font-size: 2rem;
+      margin-bottom: 1px;
+  }
+  
+  p{
+      margin-top: -2px;
+      font-size: 0.7rem;
+  }
+  .container{
+      display: grid;
+      grid-template-columns: 75px 75px 75px;
+      gap: 20px;
+  }
+  /* styling the telephone icon */
+  #cell{
+      transform: translateX(95px);
+      color: white;
+      height: 53px;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      padding: 8px;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #32CD32;
+  }
+  /* the clear icon */
+  #cancel{
+      transform: translateX(120px);
+      color: white;
+  }
+  #tools{ 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: fixed;
+      z-index: 2000;
+    bottom: 10px;
+  }
+  
+  .icons i{
+      padding: 0 28px;
+      color: grey;
+  }
+  /* icons texts */
+  .icons > p{
+      font-size: 13px;
+      color: grey;
+      padding-top: 6px;
+  }
+  #result{
+  background-color: transparent;
+    border: none;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    font-size: 30px;
+    box-sizing: border-box;
+  }
+  button{
+  width: 60px;
+    height: 30px;
+  }
+  #overlay{
+      display: none;
+      position: relative;
+      top: 0;
+      left: 0; 
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+  }
+  
+  .contact{
+      position: fixed;
+    width: 100%;
+      height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+  
+  }
+  
+  #search{
+      width: 300px;
+      height: 20px;
+    display: block;
+  }
+  .abr{
+      width: 40px;
+      height: 40px;
+      background-color: grey;
+      border-radius: 100%;
+      display: block;
+      padding: 17px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+  }
+  span{
+      float: left;
+      margin: 10px 10px 10px 0;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: 1px;
+  }
+  .name{
+      margin-top: 25px;
+      margin-left: 3px;
+  }
+  .cl{
+      clear: left;
+  }
+  .cl p{
+      border-bottom: 0.1px solid;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  #prev{
+    position: absolute;
+    top: 20;
+      font-size: 20px;
+      color: blue;
+      font-weight: bold;
+  }
+  
